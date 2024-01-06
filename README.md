@@ -1,15 +1,12 @@
 # User Directory
-
 The User Directory project is a simple React application that allows users to browse a directory of users, view their details, and see their respective timezones.
 
-Home Page:
-![Desktop View]https://raw.githubusercontent.com/gauravmittal54/user-directory/main/assets/desktop-view.png
-
-Desktop View:
-![Desktop View](https://raw.githubusercontent.com/gauravmittal54/user-directory/main/assets/desktop-view.png)
-
-Mobile View:
-![Mobile View](https://raw.githubusercontent.com/gauravmittal54/user-directory/main/assets/mobile-view.png)
+## Ui Screenshots
+![image](https://github.com/gauravmittal54/user-directory/assets/61792468/e7da36d6-7e25-4adc-a276-379a6fcaeb28)
+desktop view : 
+![image](https://github.com/gauravmittal54/user-directory/assets/61792468/ee5a0fff-9f24-45f5-b8e3-d7214ef40e47)
+mobile view : 
+![image](https://github.com/gauravmittal54/user-directory/assets/61792468/3fa27cce-8d41-473c-8d22-43408af148f6)
 
 
 
