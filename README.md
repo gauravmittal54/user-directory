@@ -12,7 +12,7 @@ The User Directory project is a simple React application that allows users to br
 
 ### User Data API
 
-- **Endpoint**: [https://api.example.com/users](https://api.example.com/users)
+- **Endpoint**: [https://jsonplaceholder.typicode.com/users](https://jsonplaceholder.typicode.com/users)
 - **Description**: This API provides user data, including user details and the number of posts for each user.
 
 ### Posts API
