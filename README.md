@@ -17,17 +17,17 @@ The User Directory project is a simple React application that allows users to br
 
 ### Posts API
 
-- **Endpoint**: [https://api.example.com/posts](https://api.example.com/posts)
+- **Endpoint**: [https://jsonplaceholder.typicode.com/posts](https://jsonplaceholder.typicode.com/posts)
 - **Description**: This API retrieves posts data, including the title and body of each post.
 
 ### Timezone API
 
-- **Endpoint**: [https://api.example.com/timezone](https://api.example.com/timezone)
+- **Endpoint**: [http://worldtimeapi.org/api/timezone](http://worldtimeapi.org/api/timezone)
 - **Description**: The Timezone API is used to fetch timezone details for selected countries, including the current time, offset, and other relevant information.
 
 ### User Profile API
 
-- **Endpoint**: [https://api.example.com/user/:userId](https://api.example.com/user/:userId)
+- **Endpoint**: [https://jsonplaceholder.typicode.com/users](https://jsonplaceholder.typicode.com/users)
 - **Description**: This API fetches detailed information about a specific user, including their profile data.
 
 
