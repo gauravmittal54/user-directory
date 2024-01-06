@@ -1,0 +1,303 @@
+/* components/UserList.css */
+
+.user-directory {
+  text-align: center;
+}
+
+.directory-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.user-card {
+  width: 80%;
+  margin: 3% auto;
+  padding: 15px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-color: #97c7e7;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  text-decoration: none; /* Remove underlines for links */
+}
+
+.user-card:hover {
+  background-color: #75a1c0; /* Change background color on hover */
+}
+
+.user-details {
+  flex-grow: 1;
+}
+
+.user-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.total-posts {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+/* components/Navbar.css */
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10;
+  margin: 0;
+}
+
+/* Styling for the Back button */
+#back-button {
+  background-color: #87cefa; /* Light sky blue */
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 5px; /* Add rounded corners */
+  color: #fff; /* Set text color to white for better contrast */
+  font-size: 14px;
+}
+
+#back-button:hover {
+  background-color: #5b9bd5; /* Darker shade on hover */
+}
+
+/* Styling for the Country Dropdown */
+#country {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>'); /* Add a custom arrow icon */
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+#country:hover {
+  border-color: #66afe9; /* Border color on hover */
+}
+
+#country:focus ~ select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 1px solid #66afe9; /* Border color when open */
+  border-top: none; /* Remove top border to avoid duplication */
+  border-radius: 0 0 5px 5px; /* Rounded corners at the bottom */
+  background-color: #fff;
+  margin-top: -1px; /* Adjust margin to align with the select box */
+  overflow-y: scroll; /* Enable vertical scrollbar */
+  scrollbar-width: thin; /* Modern scrollbar width */
+  scrollbar-color: #66afe9 transparent; /* Modern scrollbar color (track, thumb) */
+}
+
+/* Style the dropdown list options */
+#country:focus ~ select option {
+  padding: 10px;
+  color: #333;
+  background-color: #fff;
+}
+
+/* Highlight the selected option */
+#country:focus ~ select option:checked {
+  background-color: #a5cef0;
+  color: #fff;
+}
+
+/* Hide scrollbar in closed state */
+#country::-webkit-scrollbar {
+  width: 8px;
+}
+
+#country::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+/* Show scrollbar with light visibility when open */
+#country:focus::-webkit-scrollbar-thumb {
+  background-color: #9fc8e9;
+  border-radius: 5px;
+}
+
+#country:focus::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+
+
+/* Styling for the Clock section */
+#clock {
+  text-align: right;
+  color: #000; /* Black text color */
+  font-size: 24px; /* Adjust the font size as needed */
+  font-family: 'Courier New', monospace; /* Use a monospaced font for better alignment */
+  background-color: #080808; /* White background color */
+  padding: 6px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+#clock-text { 
+  color: white;
+}
+
+/* Styling for the Current Time display */
+.current-time {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* Styling for the Pause/Start button */
+#pause-start-button {
+  background-color: #00ff00; /* Light green */
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 5px; /* Add rounded corners */
+  color: #fff; /* Set text color to white for better contrast */
+  font-size: 14px;
+}
+
+#pause-start-button:hover {
+  background-color: #008000; /* Darker shade on hover */
+}
+
+/* Add this CSS to your stylesheet */
+@media (max-width: 1023px) {
+  #navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #back-button,
+  #country,
+  #clock,
+  #pause-start-button {
+    margin-bottom: 10px;
+  }
+}
+
+/* Add this CSS to your stylesheet */
+
+#profile-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.user-details-card {
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-color: #97c7e7;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.left-section,
+.right-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.username-catchphrase {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.address {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#user-contact {
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+
+/* Add this CSS to your stylesheet */
+
+#user-posts-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#user-posts-heading {
+  text-align: center;
+}
+
+.user-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px; /* Add spacing between grid items */
+}
+
+.post-card {
+  width: 100%;
+  max-width: 400px; /* Set a maximum width */
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f0f0f0; /* Light background color */
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#post-card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#post-card-body {
+  font-size: 16px;
+  color: #555;
+}
+
+.no-posts-message {
+  text-align: center;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 767px) {
+  .user-posts {
+      grid-template-columns: 1fr;
+      gap: 10px; /* Adjust spacing for mobile devices */
+  }
+}
+/* Responsive styles for iPod */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .user-posts {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 15px; /* Adjust spacing for iPod */
+  }
+}
