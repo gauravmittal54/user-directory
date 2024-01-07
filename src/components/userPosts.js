@@ -15,7 +15,7 @@ const UserPosts = ({ userPosts }) => {
                     </div>
                 </div>
             ) : (
-                <p className="no-posts-message">No posts available for this user.</p>
+                <p className="no-posts-message">Loading posts...</p>
             )}
         </div>
     );
